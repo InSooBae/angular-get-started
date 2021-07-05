@@ -15,7 +15,7 @@ export class ProductDetailsComponent implements OnInit {
   ngOnInit() {
     // 우선 현재 경로에서 product id를 가져온다.
     const routeParams = this.route.snapshot.paramMap;
-    const productIdFromRoute = Number(routeParams.get('porductId'));
+    const productIdFromRoute = Number(routeParams.get('productId'));
 
     // 경로에 제공된 ID와 일치하는 제품 찾기
     this.product = products.find(product => product.id === productIdFromRoute);
