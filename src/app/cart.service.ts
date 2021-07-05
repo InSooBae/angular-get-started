@@ -6,12 +6,12 @@ import { Product } from './products';
 })
 export class CartService {
   items: Product[] = [];
-  constructor(product: Product) {
+  
+  addToCart(product: Product) {
     this.items.push(product);
   }
 
-  //getter
-  getItem() {
+  getItems() {
     return this.items;
   }
 
